@@ -1,122 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Birthday My Love 💕</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday My Love 💕</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <!-- Background music -->
-    <audio id="bg-music" loop>
-        <source src="music/oursong.mp3" type="audio/mpeg" />
-        Your browser does not support audio.
-    </audio>
+  <!-- Background music -->
+  <audio id="bg-music" loop>
+    <source src="music/oursong.mp3" type="audio/mpeg" />
+    Your browser does not support audio.
+  </audio>
 
-    <!-- Mobile cursor / Tap ripple -->
-    <div class="cursor-trail" id="cursor"></div>
-    <div class="overlay"></div>
+  <!-- Mobile cursor / Tap ripple -->
+  <div class="cursor-trail" id="cursor"></div>
+  <div class="overlay"></div>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="shake-title">Happy Birthday, My Love 💕</h1>
-            <p class="subtitle">
-                Every moment with you is my favorite memory. Tap anywhere for magic! ✨
-            </p>
-            <div class="hero-buttons">
-                <button id="play-btn" class="magic-btn">▶ Play Our Song</button>
-                <button id="confetti-btn" class="magic-btn">🎉 Surprise!</button>
-                <button id="scroll-btn" class="magic-btn">📸 Our Memories</button>
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="shake-title">Happy Birthday, My Love 💕</h1>
+      <p class="subtitle">
+        Every moment with you is my favorite memory. Tap anywhere for magic! ✨
+      </p>
+      <div class="hero-buttons">
+        <button id="play-btn" class="magic-btn">▶ Play Our Song</button>
+        <button id="confetti-btn" class="magic-btn">🎉 Surprise!</button>
+        <button id="scroll-btn" class="magic-btn">📸 Our Memories</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="message" id="message">
+      <h2>💌 To the most special girl</h2>
+      <p>
+        On your special day, I just want to say that you make my world brighter,
+        my heart fuller, and my life so much happier. Tap around for surprises!
+      </p>
+    </section>
+
+    <!-- Interactive Flip Photo Gallery -->
+    <section class="gallery-section" id="memories">
+      <h2>Our Memories Together 📸✨</h2>
+      <p class="gallery-subtitle">Tap to flip & tap gallery for confetti!</p>
+
+      <div class="gallery" id="gallery">
+        <!-- CARD 1 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- FRONT: text -->
+            <div class="flip-card-front">
+              <div class="front-content">
+                <h3>Memory 1</h3>
+                <p>"The day everything felt perfect" 💕</p>
+              </div>
             </div>
-
+            <!-- BACK: image -->
+            <div class="flip-card-back">
+              <img src="images/memori1.jpg" alt="Memory 1" />
+            </div>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <section class="message" id="message">
-            <h2>💌 To the most special girl</h2>
-            <p>
-                On your special day, I just want to say that you make my world brighter,
-                my heart fuller, and my life so much happier. Tap around for surprises!
-            </p>
-        </section>
-
-        <!-- Interactive Flip Photo Gallery -->
-        <section class="gallery-section" id="memories">
-            <h2>Our Memories Together 📸✨</h2>
-            <p class="gallery-subtitle">Tap to flip & tap gallery for confetti!</p>
-
-            <div class="gallery" id="gallery">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/memori1.jpg" alt="Memory 1" />
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="back-content">
-                                <p>"The day everything felt perfect" 💕</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/photo2.jpg" alt="Memory 2" />
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="back-content">
-                                <p>"Your smile, my favorite view" 😍</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/photo3.jpg" alt="Memory 3" />
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="back-content">
-                                <p>"Laughing at our silly jokes" 😂</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/photo4.jpg" alt="Memory 4" />
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="back-content">
-                                <p>"Another beautiful day with you" 🌟</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- CARD 2 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="front-content">
+                <h3>Memory 2</h3>
+                <p>"Your smile, my favorite view" 😍</p>
+              </div>
             </div>
-        </section>
-
-        <section class="closing">
-            <h2>Make a wish 🎂💖</h2>
-            <p>
-                Tap me for one last surprise! No matter where life takes us, I promise
-                to stand by you, love you, and create a million more memories together.
-            </p>
-            <div class="signature">
-                With all my love,<br />
-                <span>Your Shreu 💕</span>
+            <div class="flip-card-back">
+              <img src="images/photo2.jpg" alt="Memory 2" />
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
 
-    <script src="script.js"></script>
+        <!-- CARD 3 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="front-content">
+                <h3>Memory 3</h3>
+                <p>"Laughing at our silly jokes" 😂</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <img src="images/photo3.jpg" alt="Memory 3" />
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="front-content">
+                <h3>Memory 4</h3>
+                <p>"Another beautiful day with you" 🌟</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <img src="images/photo4.jpg" alt="Memory 4" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <h2>Make a wish 🎂💖</h2>
+      <p>
+        Tap me for one last surprise! No matter where life takes us, I promise
+        to stand by you, love you, and create a million more memories together.
+      </p>
+      <div class="signature">
+        With all my love,<br />
+        <span>Your Shreu 💕</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
